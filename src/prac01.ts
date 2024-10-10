@@ -1,9 +1,13 @@
 export {};
+import dayjs from "dayjs";
+import 'dayjs/locale/ja';
 
-const todo = {
-  name: "TypeScriptの勉強", // name = "..." ではない点に要注意
-  priority: 3, // priority = "..." ではない点に要注意
-};
-console.log(`Todo 1 => ${todo.name}（優先度:${todo.priority})`);
-console.log(todo);
-console.log(JSON.stringify(todo, null, 2));
+dayjs.locale('ja');
+
+const deadline: Date = new Date(2024, 10, 2, 11, 45);
+const createdAt: Date = new Date();
+
+const str =
+    `期日 ${dayjs(deadline).format("YYYY/MM/DD(ddd) HH:mm")}` +
+    `(登録日: ${dayjs(createdAt).format("YYYY/MM/DD(ddd) HH:mm")})`;
+console.log(str);
