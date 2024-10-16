@@ -1,12 +1,13 @@
 export {};
 import { Todo } from "./types";
-import { check } from "./utils/check";
+import { submissionCheck } from "./utils/submissionCheck";
+import { timeCheck } from "./utils/timeCheck";
 
 const todo1: Todo = {
     name: "TypeScriptの勉強",
     priority: 3,
-    isDone: false,
-    deadline: new Date(2024, 9, 11, 9, 45),
+    isDone: true,
+    deadline: new Date(2024, 9, 16, 15, 45),
 };
 
 const todo2: Todo = {
@@ -16,5 +17,5 @@ const todo2: Todo = {
     deadline: new Date(2024, 9, 8, 16, 0),
 };
 
-console.log(check(todo1));
-console.log(check(todo2));
+console.log(submissionCheck(todo1));
+console.log(submissionCheck(todo2));
