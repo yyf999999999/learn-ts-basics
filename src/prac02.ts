@@ -3,6 +3,7 @@ import { Todo } from "./types";
 import { printTodo } from "./utils/printTodo";
 
 const todo1: Todo = {
+    id: 1,
     name: "TypeScriptの勉強",
     priority: 3,
     isDone: false,
@@ -10,6 +11,7 @@ const todo1: Todo = {
 };
 
 const todo2: Todo = {
+    id: 1,
     name: "基礎物理3の宿題",
     priority: 1,
     isDone: false,
