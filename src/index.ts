@@ -16,5 +16,5 @@
 //console.log("■ prac06.ts の実行");
 //import "./prac06";
 
-console.log("■ enshu(2).ts の実行");
-import "./enshu(2)";
+console.log("■ prac07.ts の実行");
+import "./prac07";
